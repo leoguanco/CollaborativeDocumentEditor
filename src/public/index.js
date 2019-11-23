@@ -14,6 +14,7 @@ function init() {
   // })
 
   let sendData = () => {
+    $('#machudocxs').summernote('saveRange');
     socket.emit('chat:message', {
       id: socket.id,
       summer: $('#machudocxs').summernote('code')
@@ -25,11 +26,10 @@ function init() {
   body.addEventListener('keyup', sendData, false);
 
   socket.on('chat:message', function (data) {
-
-    $('#machudocxs').summernote('saveRange');
     $('#machudocxs').summernote('code', data.summer);
     $('#machudocxs').summernote('restoreRange');
-    // $('#machudocxs').summernote('focus');
+    // $('#machudocxs').on('summernote.focus', () => {
+    // });
   });
 }
 
