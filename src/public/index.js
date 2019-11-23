@@ -2,19 +2,34 @@ function init() {
   // Socket IO
   let socket = io();
 
-  var quill = new Quill('#machdoxs');
+  $('#machudocxs').summernote();
 
   let body = document.getElementById('body');
-  let machdoxs = document.getElementById('machdoxs');
 
-  body.addEventListener('keyup', (e) => {
+  // $('#machudocxs').on(['summernote.blur', 'summernote.keyup'], function (we, contents, $editable) {
+  //   socket.emit('chat:message', {
+  //     id: socket.id,
+  //     summer: $('#machudocxs').summernote('code')
+  //   });
+  // })
+
+  let sendData = () => {
     socket.emit('chat:message', {
-      message: machdoxs.value
+      id: socket.id,
+      summer: $('#machudocxs').summernote('code')
     });
-  });
+  }
+
+  body.addEventListener('click', sendData, false);
+  body.addEventListener('blur', sendData, false);
+  body.addEventListener('keyup', sendData, false);
 
   socket.on('chat:message', function (data) {
-    machdoxs.value = data.message;
+
+    $('#machudocxs').summernote('saveRange');
+    $('#machudocxs').summernote('code', data.summer);
+    $('#machudocxs').summernote('restoreRange');
+    // $('#machudocxs').summernote('focus');
   });
 }
 
