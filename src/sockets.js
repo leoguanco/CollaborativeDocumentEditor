@@ -1,3 +1,5 @@
+const store = require('./store')
+
 module.exports = io => {
   io.on('connection', socket => {
     console.log('Nueva conexion: ',socket.id)
@@ -23,6 +25,8 @@ module.exports = io => {
     })
 
     socket.on('textChange', data => {
+      store.delta = data.delta
+      store.oldContents = data.oldContents
       sendMessage('textChange', data)
     });
 
@@ -31,6 +35,7 @@ module.exports = io => {
     })
 
     socket.on('disconnect', () => {
+      console.log('Desconexion: ' + socket.id)
       sendMessage('disconnect', {id: socket.id})
     })
   });

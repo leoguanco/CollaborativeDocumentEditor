@@ -20,7 +20,8 @@ function init() {
       if (source === 'user') {
         socket.emit('textChange', {
           id: socket.id,
-          delta: delta
+          delta: delta,
+          oldContents: oldContents
         })
       }
     }
@@ -50,6 +51,19 @@ function init() {
         })
       })
   }
+
+  const setInitialContent = function() {
+    fetch('/store')
+      .then((response) => {
+        return response.json()
+      })
+      .then((data) => {
+        quill.setContents(data.oldContents)
+        quill.updateContents(data.delta)
+      })
+  }
+
+  setInitialContent()
   getClients()
 
   quill.on('text-change', textChangeHandler(quill))

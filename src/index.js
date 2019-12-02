@@ -2,6 +2,7 @@ const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
 const path = require('path');
+const store = require('./store');
 
 // intializations
 const app = express();
@@ -16,6 +17,10 @@ require('./sockets')(io);
 
 // static files
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/store', function(req, res) {
+  res.send(store)
+})
 
 app.get('/quill_cursors.js', function(req, res) {
   res.sendFile(path.join(__dirname, '..', '/node_modules/quill-cursors/dist/quill-cursors.js'))
