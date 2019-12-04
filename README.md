@@ -40,13 +40,13 @@ El proyecto cuenta con las siguientes librerias que se instalan una vez ejecutad
 
 ## Modulos
 * ExpressJS
- * Es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles.
+  * Es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles.
 * Nodemon
- * Es una herramienta muy útil para desarrollo de aplicaciones en NodeJS. Se encarga de monitorear los cambios en el codigo fuente que se esta desarrollando y automaticamente reinicia el servidor.
+  * Es una herramienta muy útil para desarrollo de aplicaciones en NodeJS. Se encarga de monitorear los cambios en el codigo fuente que se esta desarrollando y automaticamente reinicia el servidor.
 * Socket IO
   * Es una librería que encapsula al protocolo WebSockets. Es utilizada para la emisión y recepción de mensajes/eventos entre el servidor y los participantes.
 * QuillJS
- * Es el modulo que se encarga de agregar diseño a la interaccion dentro del recuadro utilizado para la edicion de texto.
+  * Es el modulo que se encarga de agregar diseño a la interaccion dentro del recuadro utilizado para la edicion de texto.
 ## Funcionamiento
 ## Problemas
 ## Conclusión
