@@ -15,10 +15,9 @@ Para ello se recomienda utilizar modulos provistos por el lenguaje de programaci
 * La entrega es grupal, en grupos de 3 o 4 integrantes.
 ## Pre requisitos
 Los principales requerimientos del proyectos se basan en la instalacion de las siguientes aplicaciones:
+* [Git](https://github.com/)
 * [NodeJS](https://nodejs.org/es/)
 * [NPM](https://www.npmjs.com/) (Por lo general una vez instalado NodeJS se instala automaticamente npm)
-* [Git](https://github.com/)
-
 ## Instalación
 Primero se requerira descargar el proyecto. Para ello, debe abrir una terminal y descargarse el proyecto con el siguiente comando:
 ```bash
@@ -36,7 +35,7 @@ Luego, podra crear una instancia de la aplicacion.
 npm run dev
 ```
 ## Dependencias
-El proyecto cuenta con las siguientes dependencias que se instalan luego de correr los comandos de instalación:
+El proyecto cuenta con las siguientes librerias que se instalan una vez ejecutados los comandos de instalación:
 * [ExpressJS](https://expressjs.com/es/)
 * [Nodemon](https://nodemon.io/)
 * [Socket.io](https://socket.io/)
