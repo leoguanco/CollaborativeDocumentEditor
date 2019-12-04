@@ -16,9 +16,10 @@ El presente proyecto es una herramienta colaborativa del tipo “editor de docum
 La aplicación tiene la principal característica de ser un editor enriquecido, esto quiere decir que se puede agregar formato al texto, además de poder saber quienes están editando el documento por medio de múltiples cursores que representan a cada usuario conectado.
 ## Pre requisitos
 Para poder correr el proyecto correctamente se recomienda tener instalados los siguientes paquetes:
-* [https://nodejs.org/es/](NodeJS)
-* [https://www.npmjs.com/](NPM)
-* [https://github.com/](Git)
+* [NodeJS](https://nodejs.org/es/)
+* [NPM](https://www.npmjs.com/)
+* [Git](https://github.com/)
+
 Por lo general una vez instalado NodeJS se instala automaticamente npm.
 ## Instalación
 Posicionarse en el directorio donde se quiere tener el proyecto y luego correr el comando:
@@ -38,13 +39,12 @@ Para poder probar la aplicación se debe correr el comando:
 npm run dev
 ## Dependencias
 El proyecto cuenta con las siguientes dependencias que se instalan luego de correr los comandos de instalación:
-
-* [https://expressjs.com/es/](ExpressJS)
-* [https://nodemon.io/](Nodemon)
-* [https://socket.io/](Socket.io)
-* [https://quilljs.com/](QuillJS)
-* [https://github.com/reedsy/quill-cursors](Quill-cursors)
-* [https://getbootstrap.com/](Bootstrap)
+* [ExpressJS](https://expressjs.com/es/)
+* [Nodemon](https://nodemon.io/)
+* [Socket.io](https://socket.io/)
+* [QuillJS](https://quilljs.com/)
+* [Quill-cursors](https://github.com/reedsy/quill-cursors)
+* [Bootstrap](https://getbootstrap.com/)
 
 ## Modulos utilizados
 * ExpressJS
