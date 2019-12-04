@@ -6,13 +6,8 @@ Dicha aplicación tiene la principal característica de ser un editor enriquecid
 ## Objetivo
 Afianzar las ideas teóricas incorporadas durante el curso mediante el desarrollo de una aplicación en tiempo real flexible, a través de internet.
 ## Detalle
-Se deberán formar equipos para realizar el siguiente trabajo.
 Se requiere la construcción de un sistema rudimentario que permita la edición colaborativa de un texto en tiempo real. Utilizando los protocolos estándares: http, websockets, etc.
-Para ello se recomienda utilizar modulos provistos por el lenguaje de programacion JavaScript. Para la emisión y recepción de mensajes/eventos entre el servidor y los participantes.
-## Condiciones de entrega
-* Fecha límite de entrega: 07/12/2019. Se espera ver avances la última clase: 30/11/2019
-* La entrega deberá constar del código fuente de la aplicación y un documento que detalle el proyecto: módulos, funcionamiento, requerimientos para su instalación, etc.
-* La entrega es grupal, en grupos de 3 o 4 integrantes.
+Para ello se recomienda utilizar modulos provistos por el lenguaje de programacion JavaScript.
 ## Pre requisitos
 Los principales requerimientos del proyectos se basan en la instalacion de las siguientes aplicaciones:
 * [Git](https://github.com/)
@@ -43,12 +38,15 @@ El proyecto cuenta con las siguientes librerias que se instalan una vez ejecutad
 * [Quill-cursors](https://github.com/reedsy/quill-cursors)
 * [Bootstrap](https://getbootstrap.com/)
 
-## Modulos utilizados
+## Modulos
 * ExpressJS
+ * Es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles.
 * Nodemon
+ * Es una herramienta muy útil para desarrollo de aplicaciones en NodeJS. Se encarga de monitorear los cambios en el codigo fuente que se esta desarrollando y automaticamente reinicia el servidor.
 * Socket IO
-  * Es una librería que encapsula al protocolo WebSockets.
+  * Es una librería que encapsula al protocolo WebSockets. Es utilizada para la emisión y recepción de mensajes/eventos entre el servidor y los participantes.
 * QuillJS
+ * Es el modulo que se encarga de agregar diseño a la interaccion dentro del recuadro utilizado para la edicion de texto.
 ## Funcionamiento
 ## Problemas
 ## Conclusión
