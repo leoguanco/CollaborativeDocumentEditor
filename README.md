@@ -14,14 +14,13 @@ Para la emisión y recepción de mensajes/eventos entre el servidor y los partic
 ## Introducción
 El presente proyecto es una herramienta colaborativa del tipo “editor de documentos” donde varios usuarios pueden interactuar entre ellos a través de la participación en la edición de un documento. 
 La aplicación tiene la principal característica de ser un editor enriquecido, esto quiere decir que se puede agregar formato al texto, además de poder saber quienes están editando el documento por medio de múltiples cursores que representan a cada usuario conectado.
-# Pre requisitos
+## Pre requisitos
 Para poder correr el proyecto correctamente se recomienda tener instalados los siguientes paquetes:
 * [https://nodejs.org/es/](NodeJS)
-NPM
-Git
-
+* [https://www.npmjs.com/](NPM)
+* [https://github.com/](Git)
 Por lo general una vez instalado NodeJS se instala automaticamente npm.
-Instalación
+## Instalación
 Posicionarse en el directorio donde se quiere tener el proyecto y luego correr el comando:
 
 git clone -b master https://github.com/leoguanco/CollaborativeDocumentEditor.git
@@ -37,21 +36,21 @@ Esto crea una nueva carpeta llamada “node_modules” donde se instalan las dep
 Para poder probar la aplicación se debe correr el comando:
 
 npm run dev
-Dependencias
+## Dependencias
 El proyecto cuenta con las siguientes dependencias que se instalan luego de correr los comandos de instalación:
 
-ExpressJS
-Nodemon
-Socket.io
-QuillJS
-Quill-cursors
-Bootstrap
+* [https://expressjs.com/es/](ExpressJS)
+* [https://nodemon.io/](Nodemon)
+* [https://socket.io/](Socket.io)
+* [https://quilljs.com/](QuillJS)
+* [https://github.com/reedsy/quill-cursors](Quill-cursors)
+* [https://getbootstrap.com/](Bootstrap)
 
-Modulos utilizados
-ExpressJS
-Nodemon
-Socket IO
-QuillJS
-Funcionamiento
-Problemas
-Conclusión
+## Modulos utilizados
+* ExpressJS
+* Nodemon
+* Socket IO
+* QuillJS
+## Funcionamiento
+## Problemas
+## Conclusión
