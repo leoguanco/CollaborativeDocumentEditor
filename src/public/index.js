@@ -84,37 +84,6 @@ function init() {
   socket.on('disconnect', function(data) {
     cursor.removeCursor(data.id)
   })
-
-
-  /*$('#machudocxs').summernote();
-
-  let body = document.getElementById('body');
-
-  // $('#machudocxs').on(['summernote.blur', 'summernote.keyup'], function (we, contents, $editable) {
-  //   socket.emit('chat:message', {
-  //     id: socket.id,
-  //     summer: $('#machudocxs').summernote('code')
-  //   });
-  // })
-
-  let sendData = () => {
-    $('#machudocxs').summernote('saveRange');
-    socket.emit('chat:message', {
-      id: socket.id,
-      summer: $('#machudocxs').summernote('code')
-    });
-  }
-
-  body.addEventListener('click', sendData, false);
-  body.addEventListener('blur', sendData, false);
-  body.addEventListener('keyup', sendData, false);
-
-  socket.on('chat:message', function (data) {
-    $('#machudocxs').summernote('code', data.summer);
-    $('#machudocxs').summernote('restoreRange');
-    // $('#machudocxs').on('summernote.focus', () => {
-    // });
-  });*/
 }
 
 document.addEventListener('DOMContentLoaded', init);

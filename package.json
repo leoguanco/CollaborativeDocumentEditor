@@ -5,11 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.16.3",
-    "nodemon": "^1.18.4",
     "quill-cursors": "^2.2.1",
     "socket.io": "^2.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
   "scripts": {
     "dev": "nodemon src/index.js"
   },
