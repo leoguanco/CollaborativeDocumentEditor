@@ -47,6 +47,3 @@ El proyecto cuenta con las siguientes librerias que se instalan una vez ejecutad
   * Es una librería que encapsula al protocolo WebSockets. Es utilizada para la emisión y recepción de mensajes/eventos entre el servidor y los participantes.
 * QuillJS
   * Es el modulo que se encarga de agregar diseño a la interaccion dentro del recuadro utilizado para la edicion de texto.
-## Funcionamiento
-## Problemas
-## Conclusión
